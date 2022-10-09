@@ -1,0 +1,19 @@
+.rg-text {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000b16;
+}
+
+@include tablet {
+  .rg-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@include desktop {
+  .rg-text {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}

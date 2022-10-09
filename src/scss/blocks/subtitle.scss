@@ -1,0 +1,22 @@
+.subtitle {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-family: 700;
+  color: #000b16;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+@include tablet {
+  .subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@include desktop {
+  .subtitle {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}

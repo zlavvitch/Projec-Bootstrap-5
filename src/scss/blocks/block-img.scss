@@ -1,0 +1,20 @@
+.block-img {
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    width: inherit;
+  }
+}
+
+@include tablet {
+  .block-img {
+    width: 549.23px;
+  }
+}
+
+@include desktop {
+  .block-img {
+    width: 329.54px;
+  }
+}

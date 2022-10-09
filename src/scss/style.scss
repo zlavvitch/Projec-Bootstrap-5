@@ -1,0 +1,73 @@
+@import '~normalize.css/normalize.css';
+@import 'bootstrap/scss/bootstrap-grid.scss';
+@import './reset-btn.scss';
+@import './reset-link.scss';
+@import './variables';
+@import './media_breakpoints.scss';
+@import './blocks/block-dscp.scss';
+@import './blocks/block-rsn.scss';
+@import './blocks/block-img.scss';
+@import './blocks/block-bgn.scss';
+@import './blocks/title.scss';
+@import './blocks/subtitle.scss';
+@import './blocks/rg-text.scss';
+@import './blocks/card.scss';
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0;
+  font-family: 'OpenSans', sans-serif;
+}
+
+.container {
+  max-width: unset;
+}
+
+.row {
+  &:last-of-type {
+    // flex-direction: row-reverse;
+    justify-content: center;
+    // justify-content: center;
+    // padding-top: 100px;
+  }
+}
+
+@include tablet {
+  .row {
+    &:last-of-type {
+      flex-direction: row-reverse;
+      align-items: center;
+      // justify-content: center;
+      // padding-top: 100px;
+    }
+  }
+}
+
+@include desktop {
+  .row {
+    &:last-of-type {
+      justify-content: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+}
